@@ -50,7 +50,7 @@ contract Vendor {
 
         // TODO: check that the requested tokens to sell > 0
 
-        // TODO check that the user has enough tokens to do the swap
+        // TODO: check that the user has enough tokens to do the swap
 
         // TODO: check that the vendor has enough ETH to pay for the tokens
 
