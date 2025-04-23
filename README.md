@@ -23,7 +23,7 @@ Welcome to the repository for Fintech and Cryptocurrencies 2025 Assignment. This
 
 > NOTE: This assignment follows from the tutorials done in class and can be accessed on this [repository](https://github.com/FinHubSA/EthereumClassWorkshop-2025). Please follow through the assignment on the [wiki](https://github.com/FinHubSA/EthereumClassWorkshop-2025/wiki).
 
-- Go through the [wiki] and complete all the `TODO`s for `Assignment 1`.
+- Go through the [wiki](https://github.com/FinHubSA/EthereumClassAssignment-2025/wiki) for the assignment and complete all the `TODO`s for `Assignment 1`.
 
 > NOTE: Add comments were necessary. Marks will also be given for following good coding standards and practices.
 
@@ -32,7 +32,7 @@ Welcome to the repository for Fintech and Cryptocurrencies 2025 Assignment. This
 ## Checkpoint 1:
 
 - Take a screenshot of the `Vendor` smart contract button on the `Debug Contracts` page and insert here:
-  > NOTE: It is easier to do this by editing you readme directly on your github account in the browser.
+> NOTE: It is easier to do this by editing you readme directly on your github account in the browser.
 
 <img src="" width="400">
 
@@ -40,5 +40,6 @@ Welcome to the repository for Fintech and Cryptocurrencies 2025 Assignment. This
 
 - Purchase 100MC tokens from `Vendor` contract.
 - Take a screenshot of the `http://localhost:3000/token-vendor` page and insert here:
+> NOTE: It is easier to do this by editing you readme directly on your github account in the browser.
 
 <img src="" width="400">
