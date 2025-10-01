@@ -1,6 +1,6 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { DeployFunction } from "hardhat-deploy/types";
-// import { Contract } from "ethers";
+//import { Contract } from "ethers";
 
 /**
  * Deploys a contract named "MemeCoin" using the deployer account and
@@ -33,7 +33,7 @@ const deployMemeCoin: DeployFunction = async function (hre: HardhatRuntimeEnviro
   });
 
   // Get the deployed contract
-  // const yourToken = await hre.ethers.getContract<Contract>("MemeCoin", deployer);
+ //const yourToken = await hre.ethers.getContract<Contract>("MemeCoin", deployer);
 };
 
 export default deployMemeCoin;
