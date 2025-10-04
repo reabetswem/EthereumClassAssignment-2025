@@ -7,7 +7,7 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   31337: {
     MemeCoin: {
-      address: "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      address: "0x84eA74d481Ee0A5332c457a4d796187F6Ba67fEB",
       abi: [
         {
           inputs: [
@@ -445,7 +445,7 @@ const deployedContracts = {
       },
     },
     Vendor: {
-      address: "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+      address: "0x212fdfCfCC22db97DeB3AC3260414909282BB4EE",
       abi: [
         {
           inputs: [
@@ -616,11 +616,7 @@ const deployedContracts = {
           type: "function",
         },
       ],
-      inheritedFunctions: {
-        owner: "@openzeppelin/contracts/access/Ownable.sol",
-        renounceOwnership: "@openzeppelin/contracts/access/Ownable.sol",
-        transferOwnership: "@openzeppelin/contracts/access/Ownable.sol",
-      },
+      inheritedFunctions: {},
     },
   },
 } as const;

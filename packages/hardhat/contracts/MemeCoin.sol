@@ -24,6 +24,7 @@ contract MemeCoin is ERC20, Ownable{
         vendorAddress = address(vendor);
 
         // TODO: mint the _totalSupply of tokens to the vendor address
-        _mint(vendorAddress, _totalSupply);
-    }
+        _mint(vendorAddress, _totalSupply);   
+        
+        }
 }

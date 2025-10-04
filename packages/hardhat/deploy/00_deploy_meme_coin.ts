@@ -1,6 +1,6 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { DeployFunction } from "hardhat-deploy/types";
-//import { Contract } from "ethers";
+import { Contract } from "ethers";
 
 /**
  * Deploys a contract named "MemeCoin" using the deployer account and
@@ -19,22 +19,39 @@ const deployMemeCoin: DeployFunction = async function (hre: HardhatRuntimeEnviro
     with a random private key in the .env file (then used on hardhat.config.ts)
     You can run the `yarn account` command to check your balance in every network.
   */
-  const { deployer } = await hre.getNamedAccounts();
-  const { deploy } = hre.deployments;
+  //const { deployer } = await hre.getNamedAccounts();
+  const { deploy, log } = hre.deployments;
+  const { deployer, owner: namedOwner } = await hre.getNamedAccounts();
+  const owner = namedOwner ?? deployer;
+
 
   await deploy("MemeCoin", {
     from: deployer,
     // Contract constructor arguments
-    args: [deployer],
+    args: ["0x78bFd52Bac6E6dd3a0782dADE32BeB74c0508A7b"],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.
     autoMine: true,
   });
-
+// hre.ethers.utils.parseEther("1000000")
   // Get the deployed contract
- //const yourToken = await hre.ethers.getContract<Contract>("MemeCoin", deployer);
+ const MemeCoin = await hre.ethers.getContract<Contract>("MemeCoin", deployer);
+ //await vendor.transferOwnership("0x78bFd52Bac6E6dd3a0782dADE32BeB74c0508A7b");
+ // Read the Vendor address from the token
+// after deploying MemeCoin…
+//const meme = await ethers.getContractAt("MemeCoin", mc.address);
+const vendorAddress = await MemeCoin.vendorAddress();
+
+// register the internally-created Vendor so hooks can find it by name
+const vendorArtifact = await hre.deployments.getArtifact("Vendor");
+await hre.deployments.save("Vendor", { address: vendorAddress, abi: vendorArtifact.abi });
+
+
+  
 };
+
+
 
 export default deployMemeCoin;
 
