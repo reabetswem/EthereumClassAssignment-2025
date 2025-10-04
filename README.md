@@ -34,7 +34,7 @@ Welcome to the repository for Fintech and Cryptocurrencies 2025 Assignment. This
 - Take a screenshot of the `Vendor` smart contract button on the `Debug Contracts` page and insert here:
 > NOTE: It is easier to do this by editing you readme directly on your github account in the browser.
 
-<img src="" width="400">
+![screenshot](screenshots/debug-contract.png)
 
 ## Checkpoint 2:
 
@@ -42,4 +42,4 @@ Welcome to the repository for Fintech and Cryptocurrencies 2025 Assignment. This
 - Take a screenshot of the `http://localhost:3000/token-vendor` page and insert here:
 > NOTE: It is easier to do this by editing you readme directly on your github account in the browser.
 
-<img src="" width="400">
+![screenshot](screenshots/token-vendor.png)
